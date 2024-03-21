@@ -21,8 +21,10 @@ func main() {
 	http.HandleFunc("/time/", handleTime)
 	http.HandleFunc("/", handleMain)
 
-	err := http.ListenAndServe(":8080", nil)
-	if err != nil {
-		panic(err)
-	}
+	/*
+		 	err := http.ListenAndServe(":8080", nil)
+			if err != nil {
+				panic(err)
+			}
+	*/
 }
